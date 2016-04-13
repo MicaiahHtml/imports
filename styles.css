@@ -1,21 +1,56 @@
 nav {
   background-color: rgb(15, 15, 15);
 }
+
 nav ul li {
   display: inline-block;
   width:25%;
   padding: 10px;
-
 }
+
 nav ul{
   border-bottom: 1px solid #000;
 }
+
 nav ul li a {
   color: rgb(255, 255, 255);
 }
+
 nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
   color: #969696;
   text-decoration: none;
+}
+
+.innerBox{
+  background-color: rgb(255,255,200);
+  height: 500px;
+  width: 80%;
+  float: left;
+  border-radius: 25px;
+}
+
+.sideBar{
+  float: left;
+  width:175px;
+  height:500px;
+  padding: 25px;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+
+}
+
+/*#main-carousel .carousel-inner .item img {
+  width: 1300px;
+  height: 500px;
+}*/
+
+#main-carousel .carousel-inner .item img {
+  margin: 0 auto;
+}
+
+#main-carousel .carousel-inner .item .carousel-caption {
+  width: 400px;
+  margin: 0 auto;
 }
 
 #main-title{
@@ -34,4 +69,37 @@ nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
 .product .description .desc-title {
   text-align: center;
   color: rgba(115, 44, 10, 0.78);
+}
+/*product images on product page*/
+body#products .product-box img{
+  height: 200px;
+  width: 200px;
+}
+
+body#products .product-box .product-image {
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+}
+
+body#products .product-box #product-image-coasters {
+  background-image: url(images/products/placemat.Coasters.jpg);
+  background-position-x: -32px;
+}
+
+body#products .product-box h4{
+  text-align: center;
+}
+
+body#products .product-box{
+  float: left;
+  padding: 10px;
+}
+body#products .product-box .product-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body#products .product-box #pin-image {
+  background-image: url(images/products/hairBerett.Pin.jpg)
 }
